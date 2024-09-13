@@ -12,11 +12,11 @@
     all receivers receiving any of the topics this publisher publishes.
     -->
 
-    <include file="$(find nimbro_topic_transport)/launch/bidirectional_machine1.launch">
+    <include file="$(find nimbro_topic_transport)/launch/bidirectional_anymal.launch">
         <arg name="allow_bidirectional" value="$(arg allow_bidirectional)" />
     </include>
 
-    <include file="$(find nimbro_topic_transport)/launch/bidirectional_machine2.launch">
+    <include file="$(find nimbro_topic_transport)/launch/bidirectional_rmf_obelix.launch">
         <arg name="allow_bidirectional" value="$(arg allow_bidirectional)" />
     </include>
 </launch>
