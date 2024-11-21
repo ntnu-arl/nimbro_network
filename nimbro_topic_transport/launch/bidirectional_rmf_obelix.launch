@@ -6,7 +6,7 @@
     <node name="tcp_sender_rmf_obelix" pkg="nimbro_topic_transport" type="tcp_sender" output="screen">
 
         <!-- The destination host name or IP address -->
-        <param name="destination_addr" value="$(arg target)" />
+        <param name="destination_addr" value="192.168.0.106" />
         <param name="destination_port" value="17002" />
 
         <!-- Load the list of topics from a YAML file -->
@@ -18,7 +18,7 @@
         <rosparam param="ignored_publishers" unless="$(arg allow_bidirectional)">[]</rosparam>
     </node>
 
-    <node name="tcp_receiver_machine2" pkg="nimbro_topic_transport" type="tcp_receiver" output="screen">
+    <node name="tcp_receiver_rmf_obelix" pkg="nimbro_topic_transport" type="tcp_receiver" output="screen">
         <param name="port" value="17001" />
 
         <!-- Remap topics so that sender & receiver do not clash if run on the
