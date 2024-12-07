@@ -2,5 +2,5 @@ topics:
  - name: "/rmf_obelix/map_sharing"
  - name: "/anymal/target_sharing"
  - name: "/anymal/map_sharing"
- - name: "/anymal_submaps"
+ - name: "/anymal/submaps"
  - name: "/anymal/inv_transform"

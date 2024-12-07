@@ -7,7 +7,7 @@
     <node name="tcp_sender_anymal" pkg="nimbro_topic_transport" type="tcp_sender" output="screen">
 
         <!-- The destination host name or IP address -->
-        <param name="destination_addr" value="$(arg target)" />
+        <param name="destination_addr" value="192.168.0.240" />
         <param name="destination_port" value="17001" />
 
         <!-- Load the list of topics from a YAML file -->
